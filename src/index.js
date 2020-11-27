@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import {HashRouter, BrowserRouter} from 'react-router-dom';
-import {HomePage} from './material-ui/Home';
+import Home from './material-ui/Home';
 
 
 ReactDOM.render(
   <BrowserRouter>
-    <HomePage  />
+    <Home  />
   </BrowserRouter>,
   document.getElementById('toolbar_section')
 );

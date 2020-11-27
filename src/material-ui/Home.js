@@ -1,4 +1,6 @@
 import withRoot from './modules/withRoot';
+import PropTypes from 'prop-types';
+
 // --- Post bootstrap -----
 import React from 'react';
 import ProductCategories from './modules/views/ProductCategories';
@@ -10,7 +12,7 @@ import ProductHowItWorks from './modules/views/ProductHowItWorks';
 import ProductCTA from './modules/views/ProductCTA';
 import AppAppBar from './modules/views/AppAppBar';
 
-export default function HomePage() {
+ function Home() {
   return (
     <React.Fragment>
       <AppAppBar />
@@ -24,3 +26,10 @@ export default function HomePage() {
     </React.Fragment>
   );
 }
+
+Home.propTypes = {
+  sections: PropTypes.array,
+  title: PropTypes.string,
+};
+
+export default withRoot(Home);
