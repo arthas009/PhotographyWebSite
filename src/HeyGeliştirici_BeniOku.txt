@@ -1,0 +1,5 @@
+İlk önce bildiğiniz üzere index.js dosyası çalışmaktadır. Temel 3 tane <div> ögesine render yaptıktan sonra
+kurduğumuz sisteme göre mantıksal olarak görevini material-ui/Header/BlogHeaderComponent ögesine bırakacak.
+Bu öge, buton eventlerini kontrol edip sayfaya yeni renderlama işlemleri getireceği için mantıksal olarak 
+yönetici pozisyonunda çalışmaktadır. Detaylar için dosyayı ziyaret edip event sonuçlarında değişen state durumunda
+neler yaptığına göz atın.
