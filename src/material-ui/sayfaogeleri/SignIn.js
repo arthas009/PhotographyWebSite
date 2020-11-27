@@ -3,14 +3,15 @@ import withRoot from './modules/withRoot';
 import React from 'react';
 import { Field, Form, FormSpy } from 'react-final-form';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from './modules/components/Typography';
-import AppFooter from './modules/views/AppFooter';
-import AppAppBar from './modules/views/AppAppBar';
-import AppForm from './modules/views/AppForm';
-import { email, required } from './modules/form/validation';
-import RFTextField from './modules/form/RFTextField';
-import FormButton from './modules/form/FormButton';
-import FormFeedback from './modules/form/FormFeedback';
+import Link from '@material-ui/core/Link';
+import Typography from '../modules/components/Typography';
+import AppFooter from '../modules/views/AppFooter';
+import AppAppBar from '../modules/views/AppAppBar';
+import AppForm from '../modules/views/AppForm';
+import { email, required } from '../modules/form/validation';
+import RFTextField from '../modules/form/RFTextField';
+import FormButton from '../modules/form/FormButton';
+import FormFeedback from '../modules/form/FormFeedback';
 
 const useStyles = makeStyles((theme) => ({
   form: {
@@ -25,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function ForgotPassword() {
+function SignIn() {
   const classes = useStyles();
   const [sent, setSent] = React.useState(false);
 
@@ -52,19 +53,21 @@ function ForgotPassword() {
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
-            Forgot your password?
+            Sign In
           </Typography>
           <Typography variant="body2" align="center">
-            {"Enter your email address below and we'll " +
-              'send you a link to reset your password.'}
+            {'Not a member yet? '}
+            <Link href="/premium-themes/onepirate/sign-up/" align="center" underline="always">
+              Sign Up here
+            </Link>
           </Typography>
         </React.Fragment>
         <Form onSubmit={handleSubmit} subscription={{ submitting: true }} validate={validate}>
           {({ handleSubmit2, submitting }) => (
             <form onSubmit={handleSubmit2} className={classes.form} noValidate>
               <Field
-                autoFocus
                 autoComplete="email"
+                autoFocus
                 component={RFTextField}
                 disabled={submitting || sent}
                 fullWidth
@@ -73,6 +76,18 @@ function ForgotPassword() {
                 name="email"
                 required
                 size="large"
+              />
+              <Field
+                fullWidth
+                size="large"
+                component={RFTextField}
+                disabled={submitting || sent}
+                required
+                name="password"
+                autoComplete="current-password"
+                label="Password"
+                type="password"
+                margin="normal"
               />
               <FormSpy subscription={{ submitError: true }}>
                 {({ submitError }) =>
@@ -90,15 +105,20 @@ function ForgotPassword() {
                 color="secondary"
                 fullWidth
               >
-                {submitting || sent ? 'In progress…' : 'Send reset link'}
+                {submitting || sent ? 'In progress…' : 'Sign In'}
               </FormButton>
             </form>
           )}
         </Form>
+        <Typography align="center">
+          <Link underline="always" href="/premium-themes/onepirate/forgot-password/">
+            Forgot password?
+          </Link>
+        </Typography>
       </AppForm>
       <AppFooter />
     </React.Fragment>
   );
 }
 
-export default withRoot(ForgotPassword);
+export default withRoot(SignIn);
