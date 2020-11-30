@@ -24,7 +24,7 @@ const styles = (theme) => ({
     padding: theme.spacing(0, 5),
   },
   image: {
-    height: 55,
+    height: 170,
   },
   title: {
     marginTop: theme.spacing(5),
@@ -53,15 +53,15 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues1.svg"
+                src="https://arborinfinity.com/wp-content/uploads/2020/08/maxresdefault-2020-08-29T230033.081.jpg"
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>
-                The best luxury hotels
+                ÜST SEVİYE FOTOĞRAFÇILIK
               </Typography>
               <Typography variant="h5">
-                {'From the latest trendy boutique hotel to the iconic palace with XXL pool'}
-                {', go for a mini-vacation just a few subway stops away from your home.'}
+                {'EBA Fotoğrafçılık, çektiği her bir pozun değerinin farkındadır ve'}
+                {'işini maximum verimlilikle yapmayı amaçlar. Kullanıcıların memnuniyeti birincil hedefimizdir.'}
               </Typography>
             </div>
           </Grid>
@@ -69,15 +69,15 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
+                src="https://arborinfinity.com/wp-content/uploads/2020/08/maxresdefault-2020-08-29T230033.081.jpg"
+                alt="photography"
               />
               <Typography variant="h6" className={classes.title}>
-                New experiences
+                Yeni Deneyimler
               </Typography>
               <Typography variant="h5">
-                {'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '}
-                {'your Sundays will not be alike.'}
+                {'EBA Fotoğrafçılık, sadece sizin tercihlerinizle sınırlı kalmaz, ayrıca yeni fikirler önererek '}
+                {'size yeni deneyimler edinme fırsatını sunar. Yeni Tarzda eğlenceli fotoğraflar ile galerinizi süslendirebilirsiniz.'}
               </Typography>
             </div>
           </Grid>
@@ -85,7 +85,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues3.svg"
+                src="https://arborinfinity.com/wp-content/uploads/2020/08/maxresdefault-2020-08-29T230033.081.jpg"
                 alt="clock"
               />
               <Typography variant="h6" className={classes.title}>
