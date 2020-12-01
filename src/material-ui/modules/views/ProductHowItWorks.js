@@ -63,7 +63,7 @@ function ProductHowItWorks(props) {
           alt="curvy lines"
         />
         <Typography variant="h4" marked="center" className={classes.title} component="h2">
-          How it works
+         Nasıl Olur ?
         </Typography>
         <div>
           <Grid container spacing={5}>
@@ -76,7 +76,7 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Appointment every Wednesday 9am.
+                  İlk önce bizimle iletişime geçin
                 </Typography>
               </div>
             </Grid>
@@ -89,7 +89,7 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  First come, first served. Our offers are in limited quantities, so be quick.
+                  İstediğiniz kampanya ve paketten yararlanmak için anlaşalım.
                 </Typography>
               </div>
             </Grid>
@@ -102,8 +102,8 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  {'New offers every week. New experiences, new surprises. '}
-                  {'Your Sundays will no longer be alike.'}
+                  {'Her hafta yeni teklifler var. Yeni deneyimleri ve sürprizleri kaçırmamak için takipte kalın.'}
+                  {''}
                 </Typography>
               </div>
             </Grid>
@@ -117,7 +117,7 @@ function ProductHowItWorks(props) {
           component="a"
           href="/premium-themes/onepirate/sign-up/"
         >
-          Get started
+          Başlayalım
         </Button>
       </Container>
     </section>

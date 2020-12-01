@@ -78,7 +78,7 @@ function ProductCTA(props) {
           <div className={classes.card}>
             <form onSubmit={handleSubmit} className={classes.cardContent}>
               <Typography variant="h2" component="h2" gutterBottom>
-                Receive offers
+                SANA ULAŞALIM
               </Typography>
               <Typography variant="h5">
                 Taste the holidays of the everyday close to home.
