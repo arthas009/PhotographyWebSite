@@ -81,7 +81,7 @@ function ProductCTA(props) {
                 SANA ULAŞALIM
               </Typography>
               <Typography variant="h5">
-                Taste the holidays of the everyday close to home.
+                İletişim bilgilerini bizimle paylaşırsan, eşsiz teklifler ile sana ulaşabiliriz
               </Typography>
               <TextField noBorder className={classes.textField} placeholder="Your email" />
               <Button type="submit" color="primary" variant="contained" className={classes.button}>
