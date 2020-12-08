@@ -30,7 +30,7 @@ const styles = (theme) => ({
     top: 0,
     bottom: 0,
     backgroundColor: theme.palette.common.black,
-    opacity: 0.5,
+    opacity: 0.9,
     zIndex: -1,
   },
   background: {
@@ -62,8 +62,8 @@ function ProductHeroLayout(props) {
           height="80"
         />*/}
         {children}
-        <div className={classes.backdrop} />
-        <div className={clsx(classes.background, backgroundClassName)} />
+        <div style={{ backgroundImage: `url(${backgroundClassName.image})` }} className={classes.backdrop} />
+      
         {  /* <img
           className={classes.arrowDown}
           src="/static/themes/onepirate/productHeroArrowDown.png"

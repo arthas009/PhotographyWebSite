@@ -118,35 +118,7 @@ export default function MainFeaturedPost(props) {
   console.log(post.image);
   if (isMainPage === true) {
     return (
-      <Paper className={classes.mainFeaturedPost} style={{ backgroundImage: `url(${post.image})` }}>
-        {/* Increase the priority of the hero background image */}
-        {<img style={{ display: 'none', width: '80%' }} src={"http://gaziokculukresmi.com"+post.image} alt={post.imageText} />}
-        <Grid container justify='left' className={classes.mainFeaturedPostContent}>
-          <div className={classes.overlay}>
-            <Typography className={classes.primaryTyphography} align="center" color="inherit" gutterBottom>
-              {post.title}
-            </Typography>
-            <Typography className={classes.primaryTyphography} align="center" color="inherit" paragraph>
-              {post.description}
-            </Typography>
-            {
-              post.btnName === '' ? null :
-                <Typography align="center">
-                  <WhiteTextButton
-                    component={CustomLink}                  
-                    name={post.btnUrl}
-                    key={"Klubumuz"}
-                    variant="outlined"
-                    className={classes.button}
-
-                  >
-                    {post.btnName}
-                  </WhiteTextButton>
-                </Typography>
-            }
-          </div>
-        </Grid>
-      </Paper>
+     z
     );
   }
   else {
