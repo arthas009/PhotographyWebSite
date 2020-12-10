@@ -123,7 +123,7 @@ function AppAppBar(props) {
               variant="h6"
               underline="none"
               className={clsx(classes.rightLink, classes.linkSecondary)}
-              href="/premium-themes/onepirate/sign-up/"
+              href="/Iletisim"
             >
               {'BIZE ULAŞIN'}
             </Button>

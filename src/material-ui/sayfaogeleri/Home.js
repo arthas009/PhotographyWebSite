@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 // --- Post bootstrap -----
 import React from 'react';
+import { Route,Switch } from 'react-router-dom';
 import ProductCategories from '../modules/views/ProductCategories';
 import ProductSmokingHero from '../modules/views/ProductSmokingHero';
 import AppFooter from '../modules/views/AppFooter';
@@ -15,7 +16,7 @@ import AppAppBar from '../modules/views/AppAppBar';
  function Home() {
   return (
     <React.Fragment>
-      <AppAppBar />
+      <AppAppBar></AppAppBar>
       <ProductHero />
       <ProductValues />
       <ProductCategories />
@@ -26,10 +27,5 @@ import AppAppBar from '../modules/views/AppAppBar';
     </React.Fragment>
   );
 }
-
-Home.propTypes = {
-  sections: PropTypes.array,
-  title: PropTypes.string,
-};
 
 export default withRoot(Home);
